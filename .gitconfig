@@ -1,0 +1,45 @@
+[user]
+	name = Yorick Poels
+	email = yorick.poels@gmail.com
+	signingkey = C99DD54DE13F3BE5
+
+[commit]
+	gpgsign = true
+
+[core]
+	editor = vim
+	whitespace = fix,-indent-with-non-tab,trailing-space,cr-at-eol
+	excludesfile = ~/.gitignore
+
+[push]
+	default = matching
+
+[branch]
+	autosetuprebase = always
+
+[merge]
+	ff = true
+
+[rebase]
+	autoStash = true
+
+[color]
+	ui = auto
+
+[alias]
+	a = add .
+	br = branch
+	ca = commit -a
+	ci = commit -v
+	clo = clone
+	co = checkout
+	dh = diff HEAD
+	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	log = log -M --decorate --graph --oneline
+	pur = pull --rebase
+	rc = rebase --continue
+	st = status
+	sth = stash
+
+[github]
+	user = yorickps
