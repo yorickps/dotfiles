@@ -1,7 +1,7 @@
 [user]
 	name = Yorick Poels
-	email = yorick.poels@gmail.com
-	signingkey = C99DD54DE13F3BE5
+	email = yorick.poels@kuleuven.be
+	signingkey = 91646595
 
 [commit]
 	gpgsign = true
@@ -31,13 +31,17 @@
 	br = branch
 	ca = commit -a
 	ci = commit -v
+	cis = commit -v -S
 	clo = clone
 	co = checkout
 	dh = diff HEAD
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
 	log = log -M --decorate --graph --oneline
+	pl = pull
+	ps = push
 	pur = pull --rebase
 	rc = rebase --continue
+	set-upstream = !git branch --set-upstream-to=origin/`git symbolic-ref --short HEAD`
 	st = status
 	sth = stash
 
