@@ -75,3 +75,11 @@ function dscleanup(){
 function dstats(){
   sudo docker stats $(sudo docker ps --format '{{.Names}}')
 }
+
+function sshtun (){ 
+  PORT=$((20000+($RANDOM%9999)))
+    echo "Using port: $PORT"
+
+    ssh -A -t -L 1080:localhost:$PORT thinking \
+    ssh -N -D $PORT nx
+}
