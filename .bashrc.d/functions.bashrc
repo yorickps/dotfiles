@@ -83,3 +83,7 @@ function sshtun (){
     ssh -A -t -L 1080:localhost:$PORT hpc \
     ssh -N -D $PORT nx
 }
+
+function adminuser (){
+ echo "$USER" | sed 's/u/x/g'
+}
