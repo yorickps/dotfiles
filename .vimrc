@@ -1,4 +1,4 @@
-autocmd FileType gitcommit call setpos('.', [0, 1, 1, 0])
+
 cmap w!! w !sudo tee % >/dev/null " enable rights elevation when editing read only files
 filetype indent on      " enable filetype-specific indenting
 filetype indent plugin on    " required
@@ -75,3 +75,6 @@ Plug 'w0rp/ale'
 " Initialize plugin system
 call plug#end()
 
+" CVE-2019-12735
+set modelines=0
+set nomodeline
