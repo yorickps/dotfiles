@@ -24,7 +24,7 @@
 	ui = auto
 
 [alias]
-	a = add .
+	a = add 
 	br = branch
 	ca = commit -a
 	ci = commit -v
@@ -47,3 +47,6 @@
 
 [push]
 	default = simple
+
+[pull]
+	rebase = true
