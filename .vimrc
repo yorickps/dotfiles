@@ -43,6 +43,7 @@ Plug 'chase/vim-ansible-yaml'
 Plug 'cometsong/ferm.vim'
 Plug 'docker/docker'
 Plug 'ekalinin/dockerfile.vim'
+Plug 'farmergreg/vim-lastplace'
 Plug 'fatih/vim-go'
 Plug 'fatih/vim-hclfmt'
 Plug 'glench/vim-jinja2-syntax'
@@ -72,6 +73,7 @@ Plug 'tpope/vim-surround'
 Plug 'vim-perl/vim-perl'
 Plug 'vim-ruby/vim-ruby'
 Plug 'w0rp/ale'
+Plug 'rust-lang/rust.vim'
 " Initialize plugin system
 call plug#end()
 
